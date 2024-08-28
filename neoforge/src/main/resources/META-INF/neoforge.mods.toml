@@ -1,0 +1,32 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "enchanteddispenser"
+version = "${version}"
+displayName = "EnchantedDispenser"
+authors = "PitaQ"
+description = '''
+Add cubic turret
+'''
+#logoFile = ""
+
+[[dependencies.enchanteddispenser]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.enchanteddispenser]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21,)"
+ordering = "NONE"
+side = "BOTH"
+
+
+[[mixins]]
+config = "enchanteddispenser.mixins.json"

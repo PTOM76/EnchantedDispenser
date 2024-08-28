@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "enchanteddispenser",
+  "version": "${version}",
+  "name": "EnchantedDispenser",
+  "description": "Add cubic turret",
+  "authors": [
+    "PitaQ"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/cubicturret"
+  },
+  "license": "MIT",
+  "icon": "assets/enchanteddispenser/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.pitan76.enchanteddispenser.fabric.EnchantedDispenserFabric"
+    ],
+    "client": [
+      "net.pitan76.enchanteddispenser.fabric.client.EnchantedDispenserFabricClient"
+    ]
+  },
+  "mixins": [
+    "enchanteddispenser.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": "*",
+    "mcpitanlib": "*",
+    "fabric-language-kotlin": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
