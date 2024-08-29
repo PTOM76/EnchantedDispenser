@@ -27,6 +27,9 @@ dependencies {
         isTransitive = false
     }
     shadowBundle(project(":common", "transformProductionFabric"))
+
+    modApi("net.pitan76:mcpitanlib-fabric${rootProject.property("mcpitanlib_version")}")
+    include("net.pitan76:mcpitanlib_checker-fabric:${rootProject.property("mcpitanlib_checker_version")}")
 }
 
 tasks.processResources {

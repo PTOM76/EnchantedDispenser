@@ -29,7 +29,7 @@ subprojects {
     base.archivesName.set("${rootProject.property("archives_base_name")}-${project.name}")
 
     repositories {
-
+        maven("https://maven.pitan76.net/")
     }
 
     dependencies {
@@ -41,6 +41,8 @@ subprojects {
                 this.mappings (file("../mappings/121-1fix.tiny"))
             }
         )
+
+        "modApi"("net.pitan76:mcpitanlib-common${rootProject.property("mcpitanlib_version")}")
     }
 
     java {

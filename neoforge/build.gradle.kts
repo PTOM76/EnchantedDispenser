@@ -31,6 +31,8 @@ dependencies {
     shadowBundle(project(":common", "transformProductionNeoForge"))
 
     implementation("thedarkcolour:kotlinforforge-neoforge:${rootProject.property("forge_kotlin_version")}")
+
+    modApi("net.pitan76:mcpitanlib-neoforge${rootProject.property("mcpitanlib_version")}")
 }
 
 tasks.processResources {

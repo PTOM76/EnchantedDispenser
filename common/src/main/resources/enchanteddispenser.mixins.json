@@ -6,6 +6,9 @@
   "client": [
   ],
   "mixins": [
+    "DispenserBlockEntityMixin",
+    "DispenserBlockMixin",
+    "ProjectileDispenserBehaviorMixin"
   ],
   "injectors": {
     "defaultRequire": 1
