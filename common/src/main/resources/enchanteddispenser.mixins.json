@@ -7,7 +7,7 @@
   ],
   "mixins": [
     "DispenserBlockEntityMixin",
-    "DispenserBlockMixin",
+    "BlockMixin",
     "ProjectileDispenserBehaviorMixin"
   ],
   "injectors": {
